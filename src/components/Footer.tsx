@@ -12,7 +12,8 @@ export function Footer({ language }: FooterProps) {
       hours: 'Horarios',
       contact: 'Contacto',
       address: 'Teatinos 465, Santiago',
-      rights: 'Todos los derechos reservados.'
+      rights: 'Todos los derechos reservados.',
+      madeBy: 'Hecho por'
     },
     en: {
       services: 'Services',
@@ -20,7 +21,8 @@ export function Footer({ language }: FooterProps) {
       hours: 'Hours',
       contact: 'Contact',
       address: 'Teatinos 465, Santiago',
-      rights: 'All rights reserved.'
+      rights: 'All rights reserved.',
+      madeBy: 'Made by'
     }
   };
 
@@ -101,6 +103,9 @@ export function Footer({ language }: FooterProps) {
         <div className="pt-8 border-t border-gray-700">
           <p className="text-center text-gray-400 text-sm">
             © {new Date().getFullYear()} Óptica Teatinos. {t.rights}
+          </p>
+          <p className="text-center text-gray-400 text-sm mt-2">
+            {t.madeBy} <a href="https://tuhuelladigital.vercel.app" target="_blank" rel="noopener noreferrer" className="text-[var(--gold)] hover:text-[var(--gold-dark)] transition-colors font-medium">TuHuellaDigital</a>
           </p>
         </div>
       </div>

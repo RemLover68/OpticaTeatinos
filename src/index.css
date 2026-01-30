@@ -445,6 +445,10 @@
     margin-top: calc(var(--spacing) * .5);
   }
 
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -1174,6 +1178,12 @@
   @media (hover: hover) {
     .hover\:text-\[var\(--gold\)\]:hover {
       color: var(--gold);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-\[var\(--gold-dark\)\]:hover {
+      color: var(--gold-dark);
     }
   }
 
